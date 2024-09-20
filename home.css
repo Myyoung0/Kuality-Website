@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Archivo', sans-serif;
+    background-color: #2d2b2b;
+    color: #e0e0e0;
+    line-height: 1.6;
+    padding-top: 10px;
+}
+
+.logo {
+    width: 30px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.intro-box, .contact-box {
+    background-color: #1c1c1c; 
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1000px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.intro-box h2, .contact-box h2 {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.intro-box p, .contact-box ul {
+    color: #e0e0e0;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 15px;
+    color: #ffffff;
+}
+
+header nav {
+    background-color: transparent;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav ul.main-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul.auth-menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 20px;
+    top: 5px;
+}
+
+header nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+}
+
+header nav ul li a:hover {
+    background-color: #3a3a3a;
+    border-radius: 5px;
+}
+
+
+main {
+    padding: 100px 20px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+ul li a {
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    section p {
+        font-size: 1.1em;
+    }
+}

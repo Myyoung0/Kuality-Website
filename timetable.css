@@ -1,0 +1,88 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Archivo', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+}
+.logo {
+    position: absolute;
+    top: 15px; 
+    left: 15px;
+    width: 40px;
+    height: auto; 
+  }
+.top-bar {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin: 1rem;
+}
+
+.top-bar-right {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.top-bar button {
+    background-color: white;
+    color: #727272;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.top-bar button:hover {
+    background-color: #f4f4f4;
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th, td {
+    padding: 0.5rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    height: 50px;
+}
+
+thead th {
+    background-color: #f0f0f0;
+    border-bottom: 2px solid #ccc;
+}
+
+thead th, tbody td {
+    min-width: 120px;
+    width: 16.66%;
+}

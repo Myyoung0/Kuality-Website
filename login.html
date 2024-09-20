@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <a href="home.html"><img src="BDNS LOGO.jpg" alt="MYoung0" class="logo"></a>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="loginForm" method="post" action="/login">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+            <br><br><hr /><br>
+            <button id="signupButton">Signup</button>
+        </form>
+        <p id="errorMessage"></p>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta username="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <a href="home.html"><img src="BDNS LOGO.jpg" alt="MYoung0" class="logo"></a>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form id="signupForm" method="post" action="/submit">
+            <label for="username">Username</label>
+            <input type="text" id="username" username="username">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" username="password">
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" username="confirmPassword">
+
+            <button type="submit">Sign Up</button>
+        </form>
+        <p id="errorMessage"></p>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>
+
